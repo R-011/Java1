@@ -16,6 +16,13 @@
 
     <button type="button" onclick="sum()">Shuma</button>
     <p id="result"></p>
+    <button type="button: onclick="zbritje()">Zbritje</button>
+    <p id="result"></p>
+     <button type="button: onclick="shumezimi()">Shumezimi</button>
+     <p id="result"></p>
+    <button type="button: onclick="pjestim()">Pjesetimi</button>
+     <p id="result"></p>
+    
 
     <script>
         function sum() {
@@ -24,6 +31,28 @@
             var c = a + b;
 
             document.getElementById('result').innerHTML = c;
+        }
+        function zbritje() {
+            var a = Number(document.getElementById('nr1').value);
+            var b = Number(document.getElementById('nr2').value);
+            var c = a - b;
+
+            document.getElementById('result').innerHTML = c;
+        }
+        function shumezimi() {
+             var a = Number(document.getElementById('nr1').value);
+            var b = Number(document.getElementById('nr2').value);
+            var c = a * b;
+
+            document.getElementById('result').innerHTML = c;
+        }
+        function pjestim(){
+            var a = Number(document.getElementById('nr1').value);
+            var b = Number(document.getElementById('nr2').value);
+            var c = a / b;
+
+            document.getElementById('result').innerHTML = c;
+
         }
     </script>
 </body>
