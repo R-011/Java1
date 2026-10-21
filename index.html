@@ -5,7 +5,25 @@
     <title> Java 1</title>
   </head>
   <body>
-    <h1> Welcome to week 1</h1>
-    <p>Kjo eshte faqja ime e pare ne github pages</p>
-  </body>
+    <label>Numri pare</label>
+    <input type="number" id="nr1">
+    <br>
+    <label>Numri dyte</label>
+    <input type="number" id="nr2">
+    <br>
+    <button type="submit" onclick="sum()" > Shuma </button> 
+    <p id="result"> </p>
+
+
+    <script>
+      function sum()
+      {
+        var a=Number(document.getElementById('nr1')).value;
+        var b=Number(document.getElementById('nr2')).value;
+        var c=a+b;
+        document.getElementById('result').innerHTML=c;
+      }
+    </script>
+      
+   </body>
 </html>
